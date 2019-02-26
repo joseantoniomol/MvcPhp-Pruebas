@@ -4,7 +4,7 @@
 
 <?php 
 // la variable esta funciona para ver lo que trae una variable o arreglo, lo de las comillas es el nombre del controlador
-	var_dump($_GET['antonio']);
+	// var_dump($_GET['antonio']);
 
 
 // si controlador en la url va vacio
@@ -27,7 +27,7 @@
 		$controller = new $controller;
 
 		// meto en la variable action la accion que viene en la url o sino por defecto sera inicio
-		$action = isset($_GET['action'] ? $_GET['controller'] : "Inicio");
+		$action = isset($_GET['action']) ? $_GET['controller'] : "Inicio";
 
 		call_user_func(array($controller,$action));
 	}
