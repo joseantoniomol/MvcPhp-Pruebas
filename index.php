@@ -6,6 +6,9 @@
 // la variable esta funciona para ver lo que trae una variable o arreglo, lo de las comillas es el nombre del controlador
 	// var_dump($_GET['antonio']);
 
+// esto es para que todos los controladores puedan tener acceso a la base de datos
+
+require_once "Models/connection.php";
 
 // si controlador en la url va vacio
 	if (!isset($_GET['controller'])) {

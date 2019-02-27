@@ -17,9 +17,12 @@ class InicioController
 // estaes una funcion para la pagina de inicio
 	public function Inicio(){
 
-		echo "Este es el controlador de inicio";
-	}
+		$db = Connection::connect();
 
+// llamo a la vista que esta dentro de  una carpeta
+		require_once"Views/inicio/principal.php";
+	}
+ 
 	
 }
 
