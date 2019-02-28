@@ -19,8 +19,11 @@ class InicioController
 
 		$db = Connection::connect();
 
+		require_once"Views/header.php";
 // llamo a la vista que esta dentro de  una carpeta
 		require_once"Views/inicio/principal.php";
+
+		require_once"Views/footer.php";
 	}
  
 	
